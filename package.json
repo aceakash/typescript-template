@@ -5,12 +5,24 @@
   "main": "index.js",
   "scripts": {
     "compile": "rm -rf dist && tsc",
-    "start": "npm run compile && node dist/index.js"
+    "start": "npm run compile && node dist/index.js",
+    "test": "ava"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^2.2.0",
+    "ts-node": "^8.3.0",
     "typescript": "^3.5.1"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }

@@ -1,5 +1,4 @@
-console.log(sayHello('world'))
+import { sayHello } from './hello'
 
-function sayHello(name: string): string {
-    return `Hello, ${name}!`
-}
+console.log(sayHello('Akash'))
+console.log(sayHello())

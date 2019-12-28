@@ -6,23 +6,15 @@
   "scripts": {
     "compile": "rm -rf dist && tsc",
     "start": "npm run compile && node dist/index.js",
-    "test": "ava"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^2.2.0",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.1"
-  },
-  "ava": {
-    "compileEnhancements": false,
-    "extensions": [
-      "ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ]
+    "@types/jest": "^24.0.25",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
   }
 }
